@@ -1,0 +1,21 @@
+spring:
+  rabbitmq:
+    ####连接地址
+    host: 127.0.0.1
+    ####端口号
+    port: 5672
+    ####账号
+    username: gyf
+    ####密码
+    password: gyf123
+    ### 地址
+    virtual-host: vhost_gyf
+yfgcq:
+  dlx:
+    exchange: yfgcq_order_dlx_exchange
+    queue: yfgcq_order_dlx_queue
+    routingKey: dlx
+  order:
+    exchange: yfgcq_order_exchange
+    queue: yfgcq_order_queue
+    routingKey: yfgcq.order
